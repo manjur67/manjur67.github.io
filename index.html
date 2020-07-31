@@ -7,7 +7,17 @@
 </head>
 <body>
 	<h1 align="center">Please Wait . . .</h1>
+	<h1 align="center"><span id="sec">0</span><span>s</span></h1>
 	<h1 align="center">or</h1>
 	<h1 align="center">[Reload / Refresh]</h1>
+	
+	<script type="text/javascript">
+		let counter = document.querySelector('#sec');
+		let count = 1;
+		setInterval(()=>{
+			counter.innerText = count;
+			count++;
+		},1000);
+	</script>
 </body>
 </html>
